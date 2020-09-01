@@ -1,5 +1,5 @@
 #Given the below class:
-class Cat:
+class Cat():
     species = 'mammal'
     def __init__(self, name, age):
         self.name = name
