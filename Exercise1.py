@@ -4,6 +4,6 @@ class PlayerCharacter:
   
   def run(self):
     print("run")
-player1 = PlayerCharacter()
+player1 = PlayerCharacter("Sandeep")
 print(player1.run())
     
