@@ -12,8 +12,12 @@ class PlayerCharacter:
   def run(self):
     print("run")
     print(f"My name is {PlayerCharacter.membership}")
+  
+  def check_self(self):
+    return self
 player1 = PlayerCharacter("Sandeep")
 print(player1.run())
 print(PlayerCharacter.calculate_sum(5,2))
+print(player1.check_self().self())
 # print(player1)
     
