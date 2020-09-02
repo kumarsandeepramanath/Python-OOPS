@@ -16,8 +16,10 @@ class PlayerCharacter:
   def check_self(self):
     return self
 player1 = PlayerCharacter("Sandeep")
-print(player1.run())
+# print(player1.run())
 print(PlayerCharacter.calculate_sum(5,2))
-print(player1.check_self().self())
+print(player1.check_self())
 print(player1)
+player1.run = "Hello ji"
+print(player1.run)
     
