@@ -19,5 +19,5 @@ player1 = PlayerCharacter("Sandeep")
 print(player1.run())
 print(PlayerCharacter.calculate_sum(5,2))
 print(player1.check_self().self())
-# print(player1)
+print(player1)
     
