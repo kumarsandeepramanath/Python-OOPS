@@ -1,11 +1,14 @@
 # print("Starting Inheritance")
 
 class User:
+    def __init__(self,email):
+        self.email = email
     def sign_in(self):
         print("Logged in")
 
 class Wizard(User):
-    def __init__(self,name,power):
+    def __init__(self,name,power,email):
+        super().__init__(email)
         self.name = name
         self.power = power
     
@@ -21,7 +24,7 @@ class Archer(User):
         print(f'Attacking with arrows : arrows-left: {self.number_of_arrows}')
 
 
-wizard1 = Wizard('Merlin','50')
+wizard1 = Wizard('Merlin','50','san')
 archer1 = Archer('Robin','500')
 # print(wizard1.attack())
 # print(archer1.attack())
@@ -31,3 +34,4 @@ def player_attack(char):
 
 print(player_attack(wizard1))
 print(player_attack(archer1))
+print(wizard1.email)
